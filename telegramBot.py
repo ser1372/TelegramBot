@@ -8,7 +8,7 @@ age = 0
 bot = telebot.TeleBot("1983412834:AAFmTrEzEa1HOWIoGvRspNn6zLf3wQzTJ10")
 @bot.message_handler(commands=["start","help"])#старт бота на какие команды будет отвечать
 def send_welcome(message):#сообщение бота привественное или любое другое
-	bot.reply_to(message, "нах запустил?")#само сообщение
+	bot.reply_to(message, "зачем запустил?")#само сообщение
 
 @bot.message_handler(func=lambda m: True)#лямбда (просто запомнить)
 def echo_all(message):#функция для эхо бота дублирует сообщения
