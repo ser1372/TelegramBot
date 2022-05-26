@@ -41,7 +41,7 @@ def reg_age(message):
 	while age == 0:
 		try:
 			age = int(message.text)
-		except Exception:
+		except Exception: #если возникнет ошибка выводит заново на экран (чтобы пользователь ввел повторно)
 			bot.send_message(message.from_user.id,"Вводи цифрами")
 
 	bot.register_next_step_handler(message, reg_ok)
